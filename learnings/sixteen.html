@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThreeD Tranforms</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width:100%;
+            height: 100%;
+        }
+        .container{
+            height: 100%;
+            width: 100%;
+            /* margin: 3rem; */
+            background-color: bisque;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+        }
+        .item{
+            height: 100px;
+            width: 100px;
+            margin: 2rem;
+            padding: 1.5rem;
+            border:2px solid black;
+            background-color: lightgreen;
+            gap: 2rem;
+            color: rgb(3, 43, 78);
+        }
+        #rotatex:hover{
+            transform: rotateX(45deg);
+        }
+        #rotatey:hover{
+            transform: rotatey(45deg);
+        }
+        #rotatez:hover{
+            transform: rotatez(45deg);
+        }
+        #translatex:hover{
+            transform: translateX(50px);
+        }
+        #translatey:hover{
+            transform: translatey(50px);
+        }
+        #translatez:hover{
+            transform:perspective(200px) translatez(50px);
+        }
+        #scalex:hover{
+            transform: scaleX(1.5);
+        }
+        #scaley:hover{
+            transform: scaley(1.5);
+        }
+        #scalez:hover{
+            transform:perspective(300px) rotatey(30deg) scalez(1.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="rotatex">rotatex</div>
+        <div class="item" id="rotatey">rotatey</div>
+        <div class="item" id="rotatez">rotatez</div>
+        <div class="item" id="translatex">translatex</div>
+        <div class="item" id="translatey">translatey</div>
+        <div class="item" id="translatez">translatez</div>
+        <div class="item" id="scalex">scalex</div>
+        <div class="item" id="scaley">scaley</div>
+        <div class="item" id="scalez">scalez</div>
+    </div>
+</body>
+</html>

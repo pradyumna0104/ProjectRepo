@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height:600px;
+            width:600px;
+            background-color: bisque;
+            border:2px solid black;
+            display:flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            border:2px solid rgb(128, 128, 128);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box2{
+            width: 200px;
+            height:200px;
+            background-color: blueviolet;
+            border:2px solid rgb(26, 4, 4);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        img{
+            width: 150px;
+            height: 100px;
+            border: 2px solid black;
+        }
+        p{
+            border: 2px solid black;
+        }
+        @media (max-width:640px){
+            .container{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="box2">
+             <img src="wallpaper2.jpg" alt="image">
+        </div>
+    </div>
+</body>
+</html>

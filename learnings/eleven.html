@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation ka gyan</title>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 100vh;
+            width: 100vw;
+            background-color: bisque;
+            border:5px solid rgb(255, 0, 0);
+        }
+        .box{
+            height:50px;
+            width:200px;
+            background-color: aqua;
+            border:2px solid brown;
+            margin: 5px;
+            padding: 5px;
+            border-radius:5%;
+            position:relative;
+            /* animation-name: first-animation;
+            animation-duration: 1s;
+            animation-iteration-count: 2;
+            animation-direction: alternate;
+            animation-timing-function: linear;
+            animation-fill-mode: both; */
+            /* @keyframes-duration::easing-function::delay::iteration-count::direction::fill-mode::play-state::name */
+            animation:5s linear 1s infinite alternate none running first-box;
+        }
+        @keyframes first-box{
+            from{
+                top:0;
+                left:0;
+            }
+            to{
+                top:0;
+                left:960px;
+            }
+        }
+        #box2{
+            height:50px;
+            width:200px;
+            background-color: aqua;
+            border:2px solid brown;
+            margin: 5px;
+            padding: 5px;
+            border-radius:5%;
+            position:relative; 
+            animation:5s linear 1s infinite alternate none running last-box;
+        }
+        @keyframes last-box{
+            from{
+                top:610px;
+                left:960px;
+            }
+            to{
+                top:610px;
+                left:0;
+            }
+        }
+        #circle{
+            height:50px;
+            width:50px;
+            background-color: rgb(111, 0, 255);
+            border:2px solid rgb(15, 3, 3);
+            border-radius:50%;
+            position: relative;
+            /* top:220px;
+            left:550px; */
+            animation:10s ease-in 0s infinite alternate none running circle-animation;
+        }
+        @keyframes circle-animation{
+            0%{
+                top:0px;
+                left:50px;
+            }
+            25%{
+                top:0px;
+                left:1080px;
+            }
+            50%{
+                top:490px;
+                left:1080px;
+            }
+            75%{
+                top:490px;
+                left:50px;
+            }
+            100%{
+                top:0px;
+                left:50px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div id="box2"></div>
+        <div id="circle"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+        }
+        .container{
+            width: 100%;
+            height: 100%;
+            background-color: aliceblue;
+            display: grid;
+            grid-template-rows: repeat(3,1fr);
+            grid-template-columns: repeat(3,1fr);
+        }
+        .item{
+            margin: 0.3rem;
+            border:2px solid rgb(58, 58, 58);
+            box-shadow: 2px 2px 5px rgb(23, 22, 22);
+        }
+        .one{
+            background-color: rgb(234, 35, 35);
+            grid-column: 1/4;
+            grid-row: 1/2;
+        }
+        .two{
+            background-color: rgb(232, 117, 35);
+            grid-column: 1/2;
+            grid-row: 2/4;
+        }
+        .three{
+            background-color: rgb(225, 152, 50);
+            grid-column: 2/4;
+            grid-row: 2/3;
+        }
+        .four{
+            background-color: darkgreen;
+            grid-row: 3/4;
+            grid-column: 2/3;
+        }
+        .five{
+            background-color: rgb(47, 196, 47);
+            grid-column: 3/4;
+            grid-row: 3/4;
+        }
+        /*.six{
+            background-color: lightgreen;
+        } */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item one"></div>
+        <div class="item two"></div>
+        <div class="item three"></div>
+        <div class="item four"></div>
+        <div class="item five"></div>
+        <!-- <div class="item six"></div> -->
+    </div>
+</body>
+</html>
