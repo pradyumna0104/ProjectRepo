@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'inter',sans-serif;
+            text-decoration: none;
+        }
+        body{
+            height: 100vh;
+            text-align: center;
+            background-color: #ffffff;
+            /* padding: 2rem; */
+        }
+        .card-page{
+            background-color: rgba(140, 138, 135, 0.253);
+            margin: 0;
+        }
+        .card-section{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem 1rem 4rem 1rem; 
+        }
+        .card-section-div{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        .card{
+            background-color: antiquewhite;
+            max-width:17rem ;
+            padding: 1rem 1.7rem;
+            border-radius: 0.5rem;
+        }
+        .card-section-head-para{
+            max-width: 567px;
+        }
+        #card-heading{
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: #ffffff;
+            text-align: center;
+        }
+        #card-para{
+            font-weight: 550;
+            font-size: 0.6rem;
+            color: #ffffff;
+            padding: 0.5rem;
+        }
+        #card-img{
+            width: 1.5rem;
+            height: 1.5rem;
+            border-radius: 50%;
+        }
+        #card1{
+            background-color: rgb(88, 139, 222);
+        }
+        #card2{
+            background-color: rgb(235, 85, 123);
+        }
+        #card3{
+            background-color: rgb(255, 181, 96);
+        }
+        #card4{
+            background-color: rgb(79, 188, 198);
+        }
+        #card5{
+            background-color: rgb(70, 184, 85);
+        }
+        #card6{
+            background-color: rgb(127, 69, 193);
+        }
+    </style>
+</head>
+<body>
+    <div class="card-page">
+        <div class="card-section">
+            <div class="card-section-head-para">
+                <h2 id="card-section-heading">Our comprtitive advantage </h2>
+                <p id="card-section-para">This is a section of some simple text,also knoen as placeholder text,it shares some characterstics of real written text but is random or otherwise genereted.</p> 
+            </div>
+           <div class="card-section-div">
+                <div class="card" id="card1">
+                    <img src="google.jpg" id="card-img">
+                    <h4 id="card-heading">Personalized learning</h4>
+                    <p id="card-para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae. Lorem, ipsum dolor.</p>
+                </div>
+                <div class="card" id="card2">
+                    <img src="google.jpg" id="card-img">
+                    <h4 id="card-heading">Affordability</h4>
+                    <p id="card-para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto minima perspiciatis a dolore! Ipsum.</p>
+                </div>
+                <div class="card" id="card3">
+                    <img src="google.jpg" id="card-img">
+                    <h4 id="card-heading">Industry Partnerships</h4>
+                    <p id="card-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem dolorem perferendis deleniti molestiae iure possimus quod.</p>
+                </div>
+                <div class="card" id="card4">
+                    <img src="google.jpg" id="card-img">
+                    <h4 id="card-heading">Innovative Technology</h4>
+                    <p id="card-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt dolorum tempore neque iure totam!</p>
+                </div>
+                <div class="card" id="card5">
+                    <img src="google.jpg" alt="img" id="card-img">
+                    <h4 id="card-heading">Responsive Support</h4>
+                    <p id="card-para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis, vero!</p>
+                </div>
+                <div class="card" id="card6">
+                    <img src="google.jpg" id="card-img">
+                    <h4 id="card-heading">Analytics and Insights</h4>
+                    <p id="card-para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est libero aliquid reiciendis assumenda ullam. Dicta, perferendis?</p>
+                </div>
+           </div>
+        </div>
+   </div>
+</body>
+</html>
