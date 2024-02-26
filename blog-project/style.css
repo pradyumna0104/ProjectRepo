@@ -1,0 +1,136 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    height: 100vh;
+    width: 75%;
+    /* border: 2px solid black; */
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header h1{
+    font-size: 1.2rem;
+    margin:1rem ;
+}
+.header p{
+    font-weight: 500;
+}
+.mainbody{
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(4,1fr);
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap:wrap ;
+}
+.item{
+    border: 2px solid rgb(226, 223, 223);
+    margin: 1rem;
+    /* width:188px; */
+    /* height: 255px; */
+    width:11.5rem;
+    height: 17.5rem;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 4px rgb(86, 84, 84);
+    overflow: hidden;
+}
+#itemimg{
+    position: relative;
+    width:100%;
+    height: 51%;
+    border-top-left-radius:5px;
+    border-top-right-radius: 5px;
+    /* object-fit: cover; */
+}
+.item:hover #itemimg{
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+}
+#itemheading{
+    font-size: 14px;
+    font-weight: 700;
+    padding: 5px;
+    margin-top: 8px;
+    margin-left: 7px;
+    text-decoration: none;
+    color: black;
+}
+#itemheading:hover{
+    color:rgb(71, 102, 255);
+}
+#itempara{
+    font-size: 12px;
+    font-weight: 550;
+    color: grey;
+    margin-left: 12px;
+}
+#itemdiv{
+    height: 36px;
+    width:165px;
+    /* border:2px solid red; */
+    margin-top: 11px;
+    margin-left: 9px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#profileimg{
+    height: 30px;
+    width: 30px;
+    border-radius: 45%;
+    margin: 1px;
+    border: 2px solid rgb(235, 235, 235);
+}
+.cover{
+    display: flex;
+    flex-direction: column;
+}
+#profilename{
+    font-size: 11px;
+    font-weight: 900;
+    color:rgb(62, 88, 255);
+    margin-top: 2px;
+}
+#profilepara{
+    font-size: 10px;
+    font-weight: 700;
+    color: rgb(166, 166, 160);
+}
+.button{
+    width: 68px;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(148, 146, 146);
+    align-self: center;
+    border-radius: 4px;
+    box-shadow: 1px 1px 2px rgb(106, 105, 105);
+}
+.button:hover{
+    border:2px solid rgb(42, 42, 42);
+    background-color: rgb(130, 130, 130);
+    box-shadow: none;
+}
+.button:hover #buttonpara{
+    color:white;
+}
+#buttonpara{
+    font-size: 10px;
+    font-weight: bolder;
+    color: rgb(130, 130, 130);
+}
