@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .container{
+            width: 100vw;
+            height: 100vh;
+            background-color: #0093E9;
+            background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card{
+            width:290px;
+            height: 470px;
+            background-color: aliceblue;
+            border-radius: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 2px 2px 15px black;
+        }
+        .card img{
+            height: 30%;
+            width: 100%;
+            border-top-right-radius: 1rem;
+            border-top-left-radius: 1rem;
+        }
+        .card p{
+            margin-left: 5%;
+            margin-top: 0%;
+        }
+        .buybox{
+            height:9%;
+            width:80%;
+            background-color: #0093E9;
+            background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+            border-radius: 5px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        .buybox img{
+            height: 70%;
+            width:15%;
+            margin: 10px;
+            border-radius: 2px;
+        }
+        .buybox p{
+            margin: 5px;
+        }
+        .buybox a{
+            margin-left: 15%;
+        }
+        .payment{
+            height:9%;
+            width:80%;
+            background-color: #3877ff;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 2%;
+            box-shadow: 3px 3px 5px rgb(34, 47, 82);
+            transition: all 0.5s linear 0s;
+        }
+        .payment:hover{
+            box-shadow: none;
+        }
+        #cancel-order{
+            text-decoration: none;
+            color: black;
+            font-weight: 600;
+            margin-top: 4%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="product.jpeg" alt="product">
+            <h2>Order Summery</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium ipsum dignissimos molestiae quia? Inventore reprehenderit voluptate id adipisci odio porro.</p>
+            <div class="buybox">
+                 <img src="buy-icon.png" alt="buy-icon">
+                 <p>
+                    annual plan</br>
+                    $399.9/year
+                 </p>
+                 <a href="#">change</a>
+            </div>
+            <div class="payment">
+                <h4>Proceed to Payment</h4>
+            </div>
+            <a href="#" id="cancel-order">cancel order</a>
+        </div>
+
+    </div>
+</body>
+</html>
