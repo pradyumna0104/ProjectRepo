@@ -6,7 +6,7 @@ Explore my collection of web projects and exercises crafted with love using HTML
 
 ## 🚀 Quick Start
 
-1. **Clone:** `git clone https://github.com/your-username/your-repo.git`
+1. **Clone:** `git clone https://github.com/pradyumna0104/ProjectRepo.git`
 2. **Explore:** Open any project folder.
 3. **Run:** Simply open the HTML files in your browser.
 
